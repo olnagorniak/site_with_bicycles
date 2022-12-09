@@ -1,0 +1,707 @@
+@import "null.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.title h1, .title h2 {
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 6px;
+	color: #353738;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+
+/* header */
+.header {
+	background: url(../img/header/bg.jpg) 100% 100%/100% 100% no-repeat;
+	display: flex;
+	flex-direction: column;
+
+	&__row {
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	&__menu{
+
+	}
+	&__body{
+
+	}
+
+}
+
+.nav {
+
+
+	&__list {
+		text-align: center;
+		padding: 55px 0 40.65% 0;
+
+
+	}
+
+	&__list li {
+		font-weight: bold;
+		font-size: 13px;
+		margin: 0 70px 0 70px;
+		display: inline-block;
+		text-transform: uppercase;
+	}
+	&__list li:nth-child(2) {
+		margin: 0 110px 0 0;
+	}
+	&__list li:nth-child(3) {
+		margin: 0 0 0 110px;
+	}
+
+
+
+	&__list li a{
+		color: #4d4959;
+	}
+}
+.header_logo {
+	position: absolute;
+	top: 2%;
+	left: 50%;
+	transform: translate3d(-45px, 0, 0);
+}
+
+
+
+@media (max-width: 767px) {
+
+	.header {
+		background: #000;
+	}
+		.nav {
+			&__list{
+				padding: 0;
+				margin: 15% auto 0 auto;
+				text-align: center;
+
+			}
+			&__list li{
+				margin: 0 auto 10% auto;
+			}
+			&__list li:nth-child(2) {
+				margin: 0 auto 10% auto;
+			}
+			&__list li:nth-child(3) {
+				margin: 0 auto 10% auto;
+			}
+			
+
+
+			&__list ul li a {
+				color: aqua;
+			}
+	
+			&__list li {
+				display: block;
+			}
+			&__list li:after {
+				width: 5px;
+				height: 10px;
+			}
+		}
+}
+
+
+/*--------*/
+
+
+/*MAIN */
+/* new */
+
+.new {
+	padding: 115px 0 140px 0px;
+	background-color: #f7f7f7;
+
+	&__img {
+		text-align: center;
+		margin: 0 0 30px 0;
+		max-width: 100%;
+	}
+
+	&__title {
+		margin: 0 0 30px 0;
+	}
+
+	&__text {
+		font-size: 16px;
+		text-align: center;
+		max-width: 1070px;
+		margin: 0 auto;
+		line-height: 26px;
+	}
+}
+
+@media (max-width: 767px) {
+		.new{
+			padding: 50px 10px 80px 10px;
+
+		&__text {
+			padding: 0 0 0 20px;
+			text-align: justify;
+		}
+		}
+	}
+	
+
+/*-------*/
+
+/*Company*/
+
+.company {
+
+	&__row {
+		display: flex;
+	}
+
+	&__img {
+		flex: 0 1 70%;
+		position: relative;
+	}
+
+	&__img img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+
+	&__body {
+		flex: 1 1 30%;
+		}
+}
+
+
+.vintage-oliva {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 60px 0 0 0;
+	background-color: #f7f7f7;
+
+
+
+	&__subtitle {
+		text-align: center;
+		margin: 0 0 30px 0;
+	}
+
+	&__title {
+		margin: 0 0 25px 0;
+	}
+
+	&__text {
+		flex: 1 1 auto;
+		padding: 0 68px 74px 68px ;
+
+	}
+
+	&__img {
+		flex: 0 0 auto
+
+	}
+	&__img img {
+		width: 100%
+	}
+
+}
+
+
+	
+
+
+   
+
+/*---------*/
+
+/* la Boriosa*/
+
+.boriosa {
+
+	&__row {
+		display: flex;
+	}
+
+
+	&__item {
+		flex: 1 1 30%;
+	}
+
+	&__body {
+		flex: 1 1 70%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	&__body img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+	}
+
+	
+
+	
+}
+
+.la-boriosa {
+	background-color: #f7f7f7;
+	display: flex;
+	flex-direction: column;
+	padding: 60px 0 0 0;
+
+	&__subtitle {
+		text-align: center;
+		margin: 0 0 30px 0;
+
+	}
+
+	&__title {
+		margin: 0 0 25px 0;
+	}
+
+	&__text {
+		flex: 1 1 auto;
+		padding: 0 68px 74px 68px ;
+	}
+
+	
+
+	&__img {
+		flex: 0 0 auto;
+	}
+	&__img img {
+		width: 100%;
+	}
+}
+
+.super-text	{
+	font-size: 16px;
+	text-align: justify;
+	line-height: 26px;
+	position: relative;
+	color: #d7d7d7;
+	}
+
+.super-text:after {
+	content: "";
+	display: block;
+	width: 50px;
+	height: 2px;
+	background: #d7d7d7;
+	margin: 35px auto 0 auto;
+
+}
+
+
+/*-----------*/
+
+/* Bicycles */
+
+.bicycles {
+
+	&__row {
+		display: flex;
+	}
+
+	&__colums {
+		flex: 0 1 33.33%;
+	}
+
+}
+
+.column-1 {
+	position: relative;
+	height: 100%;
+	
+
+}
+.column-1 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+.column-2 {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 60px 0 0 0;
+	background-color: #f7f7f7;
+
+	&__subtitle {
+		text-align: center;
+		margin: 0 0 30px 0;
+	}
+
+	&__title {
+		margin: 0 0 25px 0;
+	}
+
+	&__text {
+		flex: 1 1 auto;
+		padding: 0 68px 74px 68px;
+	}
+
+	&__img {
+		flex: 0 0 auto;
+	}
+	&__img img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		top: 0;
+		left: 0;
+	}
+}
+
+.column-3 {
+	position: relative;
+	height: 100%;
+	
+
+}
+.column-3 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*----------*/
+
+/* Twiter */
+
+.twiter {
+	background-color: #f7f7f7;
+	padding: 120px 0 60px 0;
+
+	&__container {
+		max-width: 1070px;
+		margin: 0 auto;
+	}
+
+	&__subtitle {
+		margin: 0 0 30px 0;
+		text-align: center;
+	}
+	&__title{
+		margin: 0 0 30px 0;
+	}
+
+	&__title span:first-child{
+		text-transform: lowercase;
+	}
+	&__title span:last-child{
+		text-transform: lowercase;
+		color: #848789;
+		font-weight: 300;
+	}
+
+	&__text {
+		font-size: 24px;
+		font-style: italic;
+		text-align: center;
+		color: #848789;
+		line-height: 30px;
+		margin: 0 0 98px 0;
+	}
+
+	&__points {
+		text-align: center;
+	}
+	&__points a {
+		margin: 0 10px 0 0;
+	}
+}
+/*--------*/
+
+/* Pictures */
+
+.pictures {
+	height: 100%;
+
+	&__row {
+		display: flex;
+	}
+
+	&__colums{
+		
+
+		&_1 {
+			flex: 0 1 33%;
+		}
+		&_2 {
+			flex: 0 1 17%;
+		}
+		&_3 {
+			flex: 0 1 17%;
+		}
+		&_4 {
+			flex: 0 1 33%;
+
+		}
+		
+	}
+}
+
+.item-1 {
+
+	&__block-top {
+		display: flex;
+	}
+
+	&__img-1 {
+		flex: 0 1 50%;
+	
+	}
+	
+
+	&__img-1 img {
+		width: 100%;
+	}
+	
+
+	&__img-2 {
+		flex: 0 1 50%;
+	
+	}
+
+	&__img-2 img {
+		width: 100%;
+	
+	}
+
+	&__block-end {
+	
+		
+	}
+
+	&__block-end img {
+		width: 100%;
+	
+	}
+}
+
+
+.item-2 {
+	height: 100%;
+}
+.item-2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.item-3 {
+	height: 100%;
+}
+.item-3 img {
+	width: 100%;
+	height: 100%;
+}
+.item-4 {
+
+	&__block-top {
+	}
+
+	&__block-top img {
+		width: 100%;
+	}
+
+
+	&__block-end {
+		display: flex;
+	}
+
+	&__img-2 {
+		flex: 0 1 50%;
+	}
+	&__img-2 img {
+		width: 100%;
+	}
+
+	&__img-3 {
+		flex: 0 1 50%;
+	}
+	&__img-3 img {
+		width: 100%;
+	}
+}
+/*-----------*/
+
+/* Discover */
+
+.discover {
+	padding: 95px 0;
+	background: #000;
+	text-align: center;
+
+
+	}
+	.discover a {
+		color: #fff;
+		border: 1px solid #fff;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 4px;
+		padding: 20px 55px;
+
+	}
+
+
+
+/*----------*/
+
+/* Email */
+
+.email {
+	padding: 110px 0;
+
+	&__subtitle {
+		text-align: center;
+		margin: 0 0 40px 0;
+	}
+
+	&__title {
+		color: #848789;
+		font-style: italic;
+		font-size: 24px;
+		letter-spacing: 2px;
+		text-align: center;
+		margin: 0 0 40px 0;
+	}
+
+	&__form {
+	}
+	&__form input:first-child {
+		width: 395px;
+		padding: 30px 0 25px 30px;
+		font-style: italic;
+		color: #929292;
+		font-size: 20px;
+		border: 1px solid #d3d7d9;
+	}
+	&__form input:last-child {
+		padding: 27px 46px 25px 46px;
+		font-size: 24px;
+		background: #64c29e;
+		color: #fff;
+	}
+}
+.container__body {
+	max-width: 535px;
+	margin: 0 auto;
+	
+}
+/*-------*/
+
+
+
+
+
+/* footer */
+.footer {
+	background-color: #f7f7f7;
+
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 250px;
+	}
+
+	&__colums {
+		flex: 0 1 33.33%;
+		padding: 0 10px 0 0;
+	}
+
+	&__colums:last-child {
+		padding: 0;
+	}
+
+	&__item {}
+}
+
+.container-footer {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.item-footer {
+
+	&__text {}
+
+	&__text p {
+		font-size: 14px;
+		font-style: italic;
+		margin: 0 0 8px 0;
+	}
+
+	&__text p:last-child {
+		margin: 0;
+	}
+
+
+	&__img {
+		padding: 0 0 0 100px;
+		text-align: center;
+		flex: 0 0 33px;
+
+	}
+
+	&__img img {
+		margin: 0 15px 0 0;
+		height: 100%;
+
+	}
+
+	&__logo {
+		min-height: 40px;
+		background: url(../img/footer/Logo.png) 100% 90% no-repeat;
+	}
+
+	&__logo p {
+		font-size: 14px;
+		padding: 15px 10px 15px 190px;
+	}
+}
